@@ -158,10 +158,6 @@ button:hover {
   flex: 1;
 }
 
-.move-summary div:not(:last-child) {
-  /* border-right: 1px solid #ccc; */
-}
-
 .move-summary h4 {
   margin: 5px 0;
   font-weight: 500;
