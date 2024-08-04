@@ -1,38 +1,181 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+}
+
+.navbar {
+  width: 250px;
+  /* background-color: #333; */
+  /* color: white; */
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 10px 0;
+  padding: 10px;
+  text-align: left;
+}
+
+.navbar a {
+  padding-left: 10px;
+  text-decoration: none;
+  /* color: white; */
+  display: block;
+}
+
+.navbar a.active {
+  /* background-color: #555; */
+  font-weight: bold;
+  border-left: 4px solid orange;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.move-item {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.move-details {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+}
+
+.category {
+  margin-bottom: 10px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.category-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+}
+
+button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9em;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inventory-details {
+  padding: 10px;
+}
+
+.inventory-details h3 {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.inventory-details .category-items li {
+  margin: 5px 0;
+}
+ .move-item i{
+  color: orange;
+ }
+
+.view-move-details-btn {
+  background-color: #ffffff;
+  color: orange;
+  border: 2px solid orange;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.view-move-details-btn:hover {
+  background-color: #d0e994;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-row div {
+  flex: 1;
+}
+
+.move-summary {
+  
+  padding: 10px;
+}
+.top-summary{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.down-summary{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.request {
+  color: orange;
+  font-weight: 600;
+}
+.move-summary div {
+  flex: 1;
+  /* text-align: center; */
+}
+
+.move-summary div:not(:last-child) {
+  /* border-right: 1px solid #ccc; */
+}
+
+.move-summary h4 {
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.icon {
+  margin-right: 10px;
+}
+.ex-house-div h3, .new-house-div h3{
+  color: orange;
+}
+.ex-house-details, .new-house-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
